@@ -1,0 +1,13 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    justify-content: center;
+    margin-top: 10%;
+    margin-bottom: 15%;
+    padding: 0px 10%;
+    gap: 20px;
+}

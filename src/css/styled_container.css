@@ -1,0 +1,65 @@
+.styled_container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    margin-left: -5px;
+    padding: 0;
+    position: absolute;
+}
+.socials{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    height: 97.5%;
+    padding: 5px 10px;
+    justify-content: end;
+    align-items: center;
+}
+
+
+
+.main_content_container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    padding: 5px 10px;
+    overflow-y: auto;
+    margin:0;
+}
+.email{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    height: 97.5%;
+    padding: 5px 10px;
+    justify-content: end;
+    align-items: center;
+    cursor: pointer;
+}
+.email_btn{
+    padding: 5px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+.email_btn h1{
+    width: 20px;
+    height: 20px;
+    font-size: clamp(15px,18px,21px);
+    color: lightgreen;
+    transform: rotate(90deg);
+    padding: 0;
+    margin: 0;
+    scale: 1.05;
+    font-weight: bold;
+    letter-spacing: 2;
+    margin-bottom: 270px;
+    cursor: pointer;
+}
+
+

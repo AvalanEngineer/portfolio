@@ -1,0 +1,129 @@
+.experiences{
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    height: fit-content;
+    padding-top: 10%;
+    margin-bottom: 10%;
+}
+.experience_body_container{
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+}
+.experience_tabs_container{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 10px;
+}
+.experience_tabs_content_container{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.experience_description {
+    list-style-type: none;
+    gap:10px;
+    margin:0;
+    padding:0 15px;
+}
+.experience_description li{
+   position: relative;
+}
+
+.experience_description li::before {
+    content: '➢ '; /* Small arrow character */
+    color: #80cbc4; /* Match arrow color with text color */
+    position: absolute;
+    left: -20px; /* Adjust space between the arrow and text */
+  }
+
+.experience_tab{
+    display: flex;
+    padding: 0;
+    border-radius: 5px;
+    align-items: center;
+    cursor: pointer;
+}
+.experience_tab:hover{
+   background-color: #ffffff26;
+}
+.span_l{
+    border-radius: 5px;
+    height: 80%;
+    width: 3px;
+}
+.experience_tab_h5{
+    font-size: clamp(13px,18px,20px);
+    color: grey;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
+    display: flex;
+    cursor: pointer;
+    text-wrap: nowrap;
+    align-items: center;
+    justify-content: left;
+    padding: 10px 40px;
+    padding-left: 20px;
+}
+.experience_tab:active .span_l{
+    background-color: lightgreen;
+}
+.experience_tab_active .span_l{
+        background-color: lightgreen;
+}
+.experience_section{
+    display:flex;
+    flex-direction:column;
+    padding:10px;
+    gap: 10px 0;
+}
+.experience_section h4{
+    color: white;
+    font-size: clamp(15px,19px,23px);
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+
+
+@media(max-width:550px){
+    .experience_body_container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+    .experience_tabs_content_container{
+        width: 100%;
+    }
+    .experience_tabs_container{
+        display: flex;
+        flex-direction: row;
+       width: 100%;
+       padding-bottom: 5px;
+       overflow-x: auto;
+    }
+    .experience_tab{
+        display: flex;
+        flex-direction: column;
+    }
+    .experience_tab:active .span_b{
+        background-color: lightgreen;
+    }
+    .experience_tab_active .span_b{
+        background-color: lightgreen;
+    }
+    .span_b{
+        border-radius: 5px;
+        width: 80%;
+        height: 3px;
+    }
+
+}

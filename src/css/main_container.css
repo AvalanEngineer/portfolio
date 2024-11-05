@@ -1,0 +1,12 @@
+.main_container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    padding: 0px;
+    margin: auto;
+     background-color: rgb(28, 26, 26);
+}

@@ -1,0 +1,89 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    padding:0px;
+    margin: 0;
+    width: 100%;
+    padding-top: 10%;
+    margin-bottom: 15%;
+    height: fit-content;
+}
+.about_body{
+    display:flex;
+    margin-top:30px;
+    height:fit-content;
+    width:100%;
+    justify-content:center;
+}
+.about_body_content{
+    width: 50%;
+    gap:20px 0px;
+    display:flex;
+    flex-direction:column;
+}
+
+
+.about_image_container{
+    display:flex;
+    width:50%;
+    height:fit-content;
+    padding:0;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.about_image_container img{
+    width: 80%;
+    height: 400px;
+    opacity: 0.5;
+}
+.about_image_container img:hover{
+    opacity: 1;
+}
+/* Style for each list */
+.skills-list {
+    column-count: 3; /* Number of columns */
+    column-fill: 4; /* Distribute items evenly across columns */
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0;
+  }
+  
+  .skills-list li {
+    text-wrap: nowrap;
+    position: relative;
+    margin-bottom: 10px; /* Space between each item */
+    font-size: 1em; /* Adjust font size if needed */
+  }
+  
+  /* Custom arrow icon before each list item */
+  .skills-list li::before {
+    content: '➢ '; /* Small arrow character */
+    color: #80cbc4; /* Match arrow color with text color */
+    position: absolute;
+    left: -20px; /* Adjust space between the arrow and text */
+  }
+
+
+
+
+@media(max-width:550px){
+   .about_body{
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+   }
+   .about_body_content{
+    width: 100%;
+   }
+   .about_image_container{
+    width: 100%;
+   }
+   .about_image_container img{
+    width: 85%;
+    height: 270px;
+    margin: 0;
+   }
+
+  
+}
