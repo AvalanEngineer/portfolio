@@ -1,10 +1,12 @@
 {
+  "homepage": "https://AvalanEngineer.github.io/portfolio",
   "name": "portfolio",
   "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "PORT=3000 react-scripts start --host 0.0.0.0",
+   "predeploy": "npm run build",
+   "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
